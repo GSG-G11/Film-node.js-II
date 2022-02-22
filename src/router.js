@@ -1,19 +1,11 @@
-const fs = require('fs');
-const path = require('path');
+const publicHandler = require('./handler/publicHandler');
 
 const router = (req, res) => {
   const endpoint = req.url;
   if (endpoint === '/') {
-    const filePath = path.join(__dirname, '..', 'public', 'index.html');
-    fs.readFile(filePath, (error, file) => {
-      if (error) {
-        res.writeHead(500);
-        res.end('SERVER ERROR!');
-      } else {
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.end(file);
-      }
-    });
+    publicHandler(res, '/public/index.html');
+  } else if (endpoint.includes('public')) {
+    publicHandler(res, endpoint);
   } else {
     res.writeHead(404);
     res.end('nothing was found');
