@@ -11,6 +11,7 @@ const router = (req, res) => {
   } else if (endpoint.includes('public')) {
     publicHandler(res, endpoint);
   } else if (endpoint.includes('search')) {
+    // eslint-disable-next-line no-console
     https.get('https://yts.mx/api/v2/list_movies.json?limit=30', (resp) => {
       let data = '';
       // A chunk of data has been received.
