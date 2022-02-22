@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.title-section {
+    margin: 2em auto;
+    width: 40vw;
+    display: block;
+}
+.title {
+    width: 82%;
+    height: 5vh;
+    border-radius: 2px;
+    outline: none;
+}
+.search {
+    padding: 0.5em 1.5em;
+    font-weight: bold;
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+}
+.film-property {
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 40vw;
+    margin: 0 auto;
+    padding: 1em;
+}
+.film-property figure {
+  width: 38vw;
+}
+.film-property figure .image-film {
+    width: 100%;
+}
+.film-property  .desc-film {
+    font-size: 1.2em;
+    /* line-height: 1.5em; */
+}
+.film-property  .desc-film::first-letter {
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+}
+
