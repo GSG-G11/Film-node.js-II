@@ -13,8 +13,7 @@ const router = (req, res) => {
     const searchText = endpoint.split('?')[1];
     dataHandler(res, searchText);
   } else {
-    res.writeHead(404);
-    res.end('nothing was found');
+    publicHandler(res, '/public/html/error.html');
   }
 };
 

@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url("./imgs/blur.jpg");
+  background-image: url("/public/imgs/blur.jpg");
   width: 100%;
   background-repeat: repeat-y;
   background-size: cover;
@@ -101,6 +101,10 @@ body {
   margin-top: 0.5em;
   margin-left: 0.5em;
   /* line-height: 1.5em; */
+}
+.error img {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {

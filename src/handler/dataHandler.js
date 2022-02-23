@@ -9,7 +9,7 @@ const dataHandler = (res, searchText) => {
     });
     // The whole response has been received. Print out the result.
     resp.on('end', () => {
-      const movies = JSON.parse(data).data.movies;
+      const { movies } = JSON.parse(data).data;
       res.end(JSON.stringify(movies));
     });
   }).on('error', (err) => {
