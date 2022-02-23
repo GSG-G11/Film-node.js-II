@@ -25,6 +25,7 @@ const createImage = (tag, nameClass = '', alt = 'image', src = '#') => {
   element.src = src;
   return element;
 };
+// render data for film
 // eslint-disable-next-line no-unused-vars
 const renderData = (data) => {
   const wholeContainer = getElement('.film-property');

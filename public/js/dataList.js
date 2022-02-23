@@ -1,4 +1,6 @@
+/* eslint-disable no-undef */
 const input = getElement('.title');
+// render options for films title
 const renderOptions = (titles) => {
   const wholeContainer = getElement('.films-name');
   deleteChild(wholeContainer);
@@ -8,7 +10,8 @@ const renderOptions = (titles) => {
     wholeContainer.appendChild(option);
   });
 };
-input.addEventListener('change', () => {
+// add keyup event for input
+input.addEventListener('keyup', () => {
   const url = '/title';
   fetch(url, renderOptions);
 });
