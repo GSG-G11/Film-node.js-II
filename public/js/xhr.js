@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const fetch = (url, callback) => {
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = () => {
