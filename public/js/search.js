@@ -25,4 +25,5 @@ searchBtn.addEventListener('click', () => {
   const url = `/search?${value}`;
   // eslint-disable-next-line no-undef
   fetch(url, renderData);
+  getElement('.title').value = '';
 });

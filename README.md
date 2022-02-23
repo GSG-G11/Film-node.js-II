@@ -4,8 +4,8 @@
  
  # links: 
  
- [HEROHU LINK](https://films-node.herokuapp.com/)
- [API LINK](https://yts.mx/api/)
+ - [HEROHU LINK](https://films-node.herokuapp.com/)
+ - [API LINK](https://yts.mx/api/)
 
  # User Journey: 
  
@@ -15,8 +15,8 @@
  
  # User Stories:
 **As a user,**
- -I want to be able to search for aany film by name
- -I want to be able to show the cover image of the film, the rating and the category for this film
+ - I want to be able to search for aany film by name
+ - I want to be able to show the cover image of the film, the rating and the category for this film
 
 
 # Install and Use
@@ -25,15 +25,15 @@
 - npm install 
 - npm start
 # Technologys Used :
--HTML
--CSS
--JS
--NODE.JS
--API
+- HTML
+- CSS
+- JS
+- NODE.JS
+- API
 
 
 
 # Team Memebers :
--Israa Hamdi Abu rayya
--Ibrhim Bahjat Alhelou
+- Israa Hamdi Abu rayya
+- Ibrhim Bahjat Alhelou
 
