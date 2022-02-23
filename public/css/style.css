@@ -145,4 +145,10 @@ body {
   .box-film {
     width: 40vw;
   }
+  .title {
+    width: 80%;
+  }
+  .title-section {
+    width: 80vw;
+  }
 }
