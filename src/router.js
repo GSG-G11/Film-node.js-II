@@ -4,16 +4,16 @@ const dataHandler = require('./handler/dataHandler');
 const router = (req, res) => {
   const endpoint = req.url;
   if (endpoint === '/') {
-    publicHandler(res, '/public/index.html');
+    publicHandler(res, '/public/index.html', 200);
   } else if (endpoint.includes('public')) {
-    publicHandler(res, endpoint);
+    publicHandler(res, endpoint, 200);
   } else if (endpoint.includes('title')) {
-    publicHandler(res, 'src/filmsTitle.json');
+    publicHandler(res, 'src/filmsTitle.json', 200);
   } else if (endpoint.includes('search')) {
     const searchText = endpoint.split('?')[1];
     dataHandler(res, searchText);
   } else {
-    publicHandler(res, '/public/html/error.html');
+    publicHandler(res, '/public/html/error.html', 404);
   }
 };
 

@@ -11,7 +11,7 @@ const contentType = {
   '.ico': 'text/plain',
 };
 
-const publicHandler = (res, url) => {
+const publicHandler = (res, url, status) => {
   const extention = path.extname(url);
   const filePath = path.join(__dirname, '..', '..', url);
   fs.readFile(filePath, (error, file) => {
@@ -19,7 +19,7 @@ const publicHandler = (res, url) => {
       res.writeHead(500);
       res.end('SERVER ERROR!');
     } else {
-      res.writeHead(200, { 'Content-Type': contentType[extention] });
+      res.writeHead(status, { 'Content-Type': contentType[extention] });
       res.end(file);
     }
   });

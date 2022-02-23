@@ -16,6 +16,13 @@ body {
   background-size: cover;
 }
 
+.title-page {
+  font-size: 3rem;
+  margin-top: 1em;
+  color: var(--white);
+  text-align: center;
+  font-family: monospace;
+}
 .title-section {
   margin: 2em auto;
   width: 50vw;
@@ -104,7 +111,8 @@ body {
 }
 .error img {
   display: block;
-  margin: 0 auto;
+  margin: 7em auto;
+  width: 60%;
 }
 
 @media (max-width: 768px) {
